@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="train.css" />
+  </head>
+  <body>
+
+    <div class="big-box">
+      <div class="calculator">
+        <form>
+
+
+          <div class="answer">
+            <input type="text" name="answer" id="">
+          </div>
+          
+          <div class="buttons">
+            <input type="button" value="AC" class="operator" onclick="answer.value = '' ">
+            <input type="button" value="DEL" class="operator" onclick="answer.value = answer.value.substr(0, answer.value.length - 1)">
+            <input type="button" value="." class="operator" onclick="answer.value += '.' ">
+            <input type="button" value="/" class="operator" onclick="answer.value += this.value">
+          </div>
+
+          <div class="buttons">
+            <input type="button" value="7" onclick="answer.value += this.value">
+            <input type="button" value="8" onclick="answer.value += this.value">
+            <input type="button" value="9" onclick="answer.value += this.value">
+            <input type="button" value="*" class="operator" onclick="answer.value += this.value">
+          </div>
+          
+          <div class="buttons">
+            <input type="button" value="4" onclick="answer.value += this.value">
+            <input type="button" value="5" onclick="answer.value += this.value">
+            <input type="button" value="6" onclick="answer.value += this.value">
+            <input type="button" value="-" class="operator" onclick="answer.value += this.value">
+          </div>
+          
+          <div class="buttons">
+            <input type="button" value="1" onclick="answer.value += this.value">
+            <input type="button" value="2" onclick="answer.value += this.value">
+            <input type="button" value="3" onclick="answer.value += this.value">
+            <input type="button" value="+" class="operator" onclick="answer.value += this.value">
+          </div>
+          
+          <div class="buttons">
+            <input type="button" value="00" onclick="answer.value += this.value">
+            <input type="button" value="0" onclick="answer.value += this.value">
+            <input type="button" value="=" class="equal operator" onclick="answer.value = eval(answer.value)">
+          </div>
+        
+        
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
